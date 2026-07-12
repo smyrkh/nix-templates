@@ -32,8 +32,8 @@
           ];
 
           shellHook = ''
-            GO_VERSION=$(go version | awk '{sub(/go/, "", $3); print $3}')
-            echo "Go $GO_VERSION Environment Ready !"
+            echo "Go Environment Ready !"
+            echo "  $(go version)"
           '';
         };
       }
